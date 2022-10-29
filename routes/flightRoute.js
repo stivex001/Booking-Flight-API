@@ -10,7 +10,9 @@ router
 
 .post('/', controller.createFlight)
 
-.post('/:id', controller.updateFlight)
+.put('/:id', controller.updateFlight)
+
+.delete('/:id', controller.deleteFlight);
 
 
 module.exports = router;
