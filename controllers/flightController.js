@@ -33,9 +33,9 @@ exports.createFlight = async (req, res) => {
     const newFlight = {
       id: uuid(),
       title,
-      time,
+      time: new Date().toLocaleTimeString(),
       price,
-      date,
+      date: new Date().toLocaleDateString()
     };
 
     Flights.push(newFlight);
